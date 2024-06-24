@@ -1,0 +1,76 @@
+.Board {
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    margin-left: 10px;
+    background-color: #000;
+    background-image:
+        linear-gradient(#333 1px, transparent 1px),
+        linear-gradient(90deg, #333 1px, transparent 1px);
+}
+.info{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 900px;
+    margin-right: 100px;
+
+}
+ol li{
+    list-style:decimal;
+    list-style-type: disc;
+}
+
+.Cell {
+    background: #ccc;
+    position: absolute;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: block;
+    margin-left: 12px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.red{
+    background-color: red;
+    color: #ccc;
+}
+
+.green{
+    background-color: green;
+    color: #ccc;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Board {
+        float:none;
+        margin: 0 auto;
+
+    }
+
+    .controls {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3px auto;
+
+    }
+
+    .info {
+        margin: 20px auto;
+    }
+}
